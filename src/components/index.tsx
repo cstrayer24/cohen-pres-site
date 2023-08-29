@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState, LegacyRef, createRef, Ref } from "react";
 import mine from "../../public/mine.jpg";
-import joshes from "../../public/joshes.jpeg";
+import joshes from "../../public/opponents.jpeg";
 import hypnotize from "../../public/hypnotize.jpeg";
 import Image from "next/image";
 function Main() {
@@ -19,7 +19,7 @@ function Main() {
 
     if (indexVar === 1) {
       setTimeout(() => {
-        setHeadLine("the incumbent");
+        setHeadLine("my opponents");
         setCerts(joshes);
       }, 500);
       setAnimeClass("certs");
